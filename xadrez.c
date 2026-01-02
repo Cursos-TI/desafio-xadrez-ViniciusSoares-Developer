@@ -6,20 +6,46 @@
 
 int main() {
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    int moveTorre = 5, moveBispo = 5, moveRainha = 8;
+    
+    /**
+     * imprimi sempre que o moveRainha for maior que 0
+     * após imprimir decrementa uma casa a se mover
+     */
+    printf("Movimentação do bispo\n");
+    while (moveBispo > 0) {
+        printf("Cima, Direita\n");
+        moveBispo--;
+    }
+    
+    /**
+     * imprimi sempre que o moveRainha for maior que 0
+     * após imprimir decrementa uma casa a se mover
+     */
+    printf("\nMovimentação da torre\n");
+    while (moveTorre > 0) {
+        printf("Direita\n");
+        moveTorre--;
+    }
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    /**
+     * imprimi sempre que o moveRainha for maior que 0
+     * após imprimir decrementa uma casa a se mover
+     */
+    printf("\nMovimentação da rainha\n");
+    while (moveRainha > 0) { //Verifica se 
+        printf("Esquerda\n");
+        moveRainha--;
+    }
 
     // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    int cavaloHorizontal = 1, cavaloVertical = 2;
+    for (int x = 0; x < cavaloHorizontal; x++) {
+        for (int y = 0; y < cavaloVertical; y++) {
+            printf("Baixo");
+        }
+        printf("Esquerda");
+    }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
